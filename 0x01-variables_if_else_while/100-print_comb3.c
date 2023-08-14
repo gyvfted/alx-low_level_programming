@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - prints three combinations
+ * main - Entry point
  * Return - Always 0
  */
 
