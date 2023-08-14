@@ -12,41 +12,23 @@
 
 int main(void)
 {
-	int i = 0, j = 1, k = 2;
+	int i, j, k;
 
-	while (i <= 7)
+	for (i = 0; i <= 7; i++)
 	{
-		while (j <= 8)
+		for (j = i + 1; j <= 8; j++)
 		{
-			while (k <= 9)
+			for (k = j + 1; k <= 9; k++)
 			{
 				putchar('0' + i);
 				putchar('0' + j);
 				putchar('0' + k);
-
 				if (i != 7 || j != 8 || k != 9)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-
-				k++;
-
-				if (k > 9)
-				{
-					k = ++j + 1;
-				}
 			}
-		}
-
-		i++;
-		j = i + 1;
-		k = j + 1;
-
-		if (i <= 7)
-		{
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
