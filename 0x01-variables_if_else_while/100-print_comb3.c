@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - Entry point program that prints all possible different combinations of two digits
- * Return - Always 0
+ * main - Entry point
+ * Return: Always 0
  */
 
 int main(void)
@@ -26,6 +26,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
