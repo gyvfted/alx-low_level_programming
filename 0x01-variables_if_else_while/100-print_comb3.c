@@ -3,29 +3,30 @@
 #include <time.h>
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main - prints three combinations
+ * Return - Always 0
  */
 
 int main(void)
 {
-	int d, p;
+	int i, j;
 
-	for (d = '0'; d < '9'; d++)
+	for (i = 0; i <= 8; i++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (j = i + 1; j <= 9; j++)
 		{
-			if (p != d)
+			putchar('0' + i);
+			putchar('0' + j);
+			if (i != 8 || j != 9)
 			{
-				putchar(d);
-				putchar(p);
-				if (d == 'a' && p == '9')
-					continue;
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+
