@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * positive_or_negative - test number positive or negative
+ * @i:number be tested
+ * Return: 0
+ */
+
 void positive_or_negative(int i)
 {
 	if (i > 0)
