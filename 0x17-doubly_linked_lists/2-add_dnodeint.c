@@ -5,7 +5,7 @@
  * @head: A pointer to the head of the dlistint_t list.
  * @n: The integer for the new node to contain.
  *
- * Return: If the function fails - NULL, 
+ * Return: If the function fails - NULL,
  * otherwise - the address of the new node.
  */
 
